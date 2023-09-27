@@ -1,6 +1,7 @@
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
 const upgradeClickButton = document.getElementById("upgradeClickButton")
+
 let numberOfCookies = 0;
 let clickIncrease = 1;
 // {} - scope
@@ -25,4 +26,7 @@ upgradeClickButton.onclick = () => {
         //zvednu pocet kliknuti
         clickIncrease ++
     }
+
 }
+
+
