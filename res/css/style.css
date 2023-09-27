@@ -22,3 +22,15 @@ p{
   img{
     margin-left: 39%;
   }
+#upgradeClickButton{
+    cursor: pointer;
+    border: none;
+    transition: .2sec ease;
+    margin-left: 45.5%;
+    background-color: white;
+    
+}
+#upgradeClickButton:hover{
+
+    transform: scale(1.3);
+}
