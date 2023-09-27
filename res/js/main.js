@@ -6,6 +6,7 @@ let numberOfCookies = 0;
 let clickIncrease = 1;
 // {} - scope
 
+// základ, přidávání čísla
 cookie.onclick = () => {
     console.log("click");
     //numberOfCookies = numberOfCookies + 1;
@@ -26,7 +27,37 @@ upgradeClickButton.onclick = () => {
         //zvednu pocet kliknuti
         clickIncrease ++
     }
-
+}
+// specialni fotky za urcite cookies
+cookie.onclick = () => {
+    numberOfCookies += clickIncrease;
+    counter.innerHTML = "RP:" + numberOfCookies;
+if (numberOfCookies >= 500) {
+    counter.innerHTML = "Počet kuldů:" + numberOfCookies;
+    cookie.src = "./res/img/cookie25.jpg";
+    cookie.innerHTML = cookie.src;
+}
+if (numberOfCookies < 500) {
+    counter.innerHTML = "RP:" + numberOfCookies;
+    cookie.src = "./res/img/cookie.jpg";
+    cookie.innerHTML = cookie.src;
 }
 
+if (numberOfCookies >= 1000) {
+    counter.innerHTML = "RP:" + numberOfCookies;
+    cookie.src = "./res/img/cookie23.jpg";
+    cookie.innerHTML = cookie.src;
+}
+if (numberOfCookies >= 9) {
+
+    teemo.src = "./res/img/teemo.jpg";
+    teemo.innerHTML = teemo.src;
+}
+if (numberOfCookies >= 10) {
+
+    teemo.src = "./res/img/transparent.jpg";
+    teemo.innerHTML = teemo.src;
+}
+
+}
 
