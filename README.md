@@ -1,2 +1,2 @@
 # RP clicker
-[View] (https://github.com/Biggy61/RP-clicker)
+[View] (https://biggy61.github.io/RP-clicker/)
