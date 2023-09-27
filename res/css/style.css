@@ -13,20 +13,19 @@ body{
     cursor: pointer
     
 }
-p{
+.center{
+    align-items: center;
     text-align: center
 }
 
   @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-  img{
-    margin-left: 39%;
-  }
+  
 #upgradeClickButton{
     cursor: pointer;
     border: none;
     transition: .2sec ease;
-    margin-left: 45.5%;
+    
     background-color: white;
     
 }
