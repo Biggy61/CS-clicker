@@ -17,7 +17,7 @@ cookie.onclick = () => {
     console.log(numberOfCookies);
     counter.innerHTML = "RP: " + numberOfCookies;
 }
-
+//upgrade
 upgradeClickButton.onclick = () => {
     if (numberOfCookies >= 50){
         //odectu susenky
@@ -28,10 +28,24 @@ upgradeClickButton.onclick = () => {
         clickIncrease ++
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 // specialni fotky za urcite cookies
 cookie.onclick = () => {
     numberOfCookies += clickIncrease;
     counter.innerHTML = "RP:" + numberOfCookies;
+    
 if (numberOfCookies >= 500) {
     counter.innerHTML = "Počet kuldů:" + numberOfCookies;
     cookie.src = "./res/img/cookie25.jpg";
@@ -52,6 +66,8 @@ if (numberOfCookies >= 9) {
 
     teemo.src = "./res/img/teemo.jpg";
     teemo.innerHTML = teemo.src;
+    text.src = "Click for message";
+    text.innerHTML = text.src
 }
 if (numberOfCookies >= 10) {
 
@@ -60,4 +76,6 @@ if (numberOfCookies >= 10) {
 }
 
 }
-
+function myFunction() {
+    alert("chichichicha")
+    }

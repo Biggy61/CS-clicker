@@ -19,11 +19,20 @@ body{
 }
 .center{
     align-items: center;
-    text-align: center
+    text-align: center;
 }
 
 #teemo{
-    margin-top: 500px
+    margin-top: 500px;
+}
+#text{
+    text-align: center;
+    margin-left: 46%;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: max-content;
+    background-color: rgb(169, 167, 167);
 }
 
 
