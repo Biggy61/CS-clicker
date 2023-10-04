@@ -56,14 +56,14 @@ upgradeAutoClickButton.onclick = () => {
     // b
   }
 };
-
+/*
 const turnOnCheats = () => {
     numberOfCookies += 1000000;
     counter.innerHTML = "RP: " + numberOfCookies;
 }
 
 turnOnCheats ();
- 
+*/
 
 
   //2. verze
