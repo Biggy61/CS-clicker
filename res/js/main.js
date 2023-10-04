@@ -8,6 +8,9 @@ let clickIncrease = 1;
 let autoClickIncrease = 0;
 let autoclicker;
 let autoclickerPrice = 100;
+let clickUpgradePrice = 50;
+
+
 // {} - scope
 
 // základ, přidávání čísla
@@ -23,10 +26,12 @@ cookie.onclick = () => {
 };
 //upgrade
 upgradeClickButton.onclick = () => {
-  if (numberOfCookies >= 50) {
+  if (numberOfCookies >= clickUpgradePrice) {
     //odectu susenky
-    numberOfCookies -= 50;
+    numberOfCookies -= clickUpgradePrice;
     counter.innerHTML = "RP: " + numberOfCookies;
+    clickUpgradePrice += 50;
+    upgradeClickButton.innerText = "Upgrade: " + clickUpgradePrice;
 
     //zvednu pocet kliknuti
     clickIncrease++;
