@@ -4,8 +4,10 @@
     
 }
 body{
-    background-image: url(../img/1291921.jpg);
+    background-image: url(../img/3501759.png);
+    
     font-size: larger;
+    
 }
 
 
@@ -19,27 +21,12 @@ body{
 #counter{
     font-size: 30px;
 }
-.center{
-    align-items: center;
-    text-align: center;
-}
-
-
-
 
 
 #teemo{
-    margin-top: 500px;
+    margin-top: 50px
 }
-#text{
-    text-align: center;
-    margin-left: 46%;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-    width: max-content;
-    background-color: rgb(169, 167, 167);
-}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
@@ -48,15 +35,9 @@ body{
 #upgradeClickButton{
     cursor: pointer;
     border: none;
-    transition: .2sec ease;
-    font-size: larger;
+    margin-left: 10%;
+    /* transition: .2sec ease; */
     background-color: transparent;
-    
-    
-}
-#upgradeClickButton:hover{
-
-    transform: scale(1.3);
 }
 #upgradeAutoClickButton{
     cursor: pointer;
@@ -66,18 +47,54 @@ body{
     background-color: transparent;
     
 }
-#upgradeAutoClickButton:hover{
-    transform: scale(1.3) ;
+
+
+#upgradeClickButtonWrapper{
+    border: 6px solid black;
+    width: 30%;
+    cursor: pointer;
+    margin: auto;
+    height: 75px;
+    transition: 0.5s ease ;
+    background-color: rgb(48, 169, 48);
+}
+#upgradeClickButtonWrapper:hover{
+    transform: scale(1.3);
+}
+
+#upgradeAutoClickButtonWrapper{
+    border: 6px solid black;
+    width: 30%;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    height: 75px;
+    transition: 0.5s ease ;
+    background-color: rgb(100, 176, 215);
+}
+#upgradeAutoClickButtonWrapper:hover{
+    transform: scale(1.3);
 }
 .upgradeImg{
-    max-width: 30px;
-    width: 100%;
+    max-width: 60px;
+    width: auto;
 }
-#upgradeClickButtonWrapper{
-    display: flex;
-    
-    border: 9px solid black;
-    width: 40%;
-    cursor: pointer;
+#upgrade{
+    float: right;
+    padding-right: 30%;
+    padding-top: 3%;
+    background-color: rgb(100, 176, 215);
+    height: auto;
+    font-size: 20px;
     
 }
+
+
+.center{
+    align-items: center;
+    text-align: center;
+}
+/* #upgradeClickButton:hover{
+
+    transform: scale(1.3);
+} */

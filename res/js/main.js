@@ -23,6 +23,7 @@ cookie.onclick = () => {
   numberOfCookies += clickIncrease;
   console.log(numberOfCookies);
   counter.innerHTML = "RP: " + numberOfCookies;
+  
 };
 //upgrade
 upgradeClickButton.onclick = () => {
@@ -31,8 +32,8 @@ upgradeClickButton.onclick = () => {
     numberOfCookies -= clickUpgradePrice;
     counter.innerHTML = "RP: " + numberOfCookies;
     clickUpgradePrice += 50;
-    upgradeClickButton.innerText = "Upgrade: " + clickUpgradePrice;
-
+    upgradeClickButton.innerText ="Upgrade: " + clickUpgradePrice;
+    
     //zvednu pocet kliknuti
     clickIncrease++;
   }
@@ -101,14 +102,14 @@ cookie.onclick = () => {
   if (numberOfCookies >= 9) {
     teemo.src = "./res/img/teemo.jpg";
     teemo.innerHTML = teemo.src;
-    text.src = "Click for message";
-    text.innerHTML = text.src;
+    teemo.onclick = () =>{
+      
+    }
   }
   if (numberOfCookies >= 10) {
     teemo.src = "./res/img/transparent.jpg";
     teemo.innerHTML = teemo.src;
   }
 };
-function myFunction() {
-  alert("chichichicha");
-}
+
+

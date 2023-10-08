@@ -6,6 +6,7 @@
     <title>RP clicker</title>
     <link rel="stylesheet" href="./res/css/style.css">
     <link rel="shortcut icon" href="./res/img/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
     </style>
@@ -14,17 +15,29 @@
     <div class="center">
     <img id="cookie" src="./res/img/cookie.jpg" alt="Cookie">
     <p id="counter">Click!</p>
-    <div id="upgradeClickButtonWrapper">
-        <img class="upgradeImg" src="../RP-clicker/res/img/download.jpg" alt="cursor">
-        <button id="upgradeClickButton">Upgrade: 50 </button><br>
-    </div>
     
+    <div id="upgradeClickButtonWrapper" class="row">
+        
+        <div  class="col-md-3">
+        <img class="upgradeImg" src="res/img/cursor.webp" alt="cursor">
+        </div>
+        
+        <div class="col-md-9" id="upgrade">
+        <button id="upgradeClickButton">Upgrade: 50 </button>
+
+        </div>
+        </div>
+
+
+
+    <div id="upgradeAutoClickButtonWrapper">
     <button id="upgradeAutoClickButton">Buy autoclick upgrade: 100</button>
     </div>
+    </div>
     <div class="center"><img id="teemo" src="" alt=""></div>
-    <div id="text" onclick="setTimeout(myFunction, 1000);"></div>
 
-    
+
+
     <script src="./res/js/main.js"></script>
 </body>
 </html>
