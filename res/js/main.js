@@ -52,7 +52,7 @@ upgradeAutoClickButtonWrapper.onclick = () => {
     
     //zastaveni intervalu
     clearInterval(autoclicker);
-   
+  
     //opakovani po case pro pridani susenky
     //           a
     autoclicker = setInterval(() => {
@@ -83,28 +83,22 @@ cookie.onclick = () => {
   numberOfCookies += clickIncrease;
   counter.innerHTML = "CS:" + numberOfCookies;
 
-  if (numberOfCookies >= 500) {
-    counter.innerHTML = "Počet kuldů:" + numberOfCookies;
-    cookie.src = "./res/img/cookie25.jpg";
-    cookie.innerHTML = cookie.src;
-  }
-  if (numberOfCookies < 500) {
-    counter.innerHTML = "CS:" + numberOfCookies;
-    cookie.src = "./res/img/cookie.jpg";
-    cookie.innerHTML = cookie.src;
-  }
+  
 
-  if (numberOfCookies >= 1000) {
+  if (numberOfCookies >= 1000000) {
     counter.innerHTML = "CS:" + numberOfCookies;
     cookie.src = "./res/img/cookie23.jpg";
+    cookie.innerHTML = cookie.src;
+  }
+  if (numberOfCookies < 1000000) {
+    counter.innerHTML = "CS:" + numberOfCookies;
+    cookie.src = "./res/img/cookie.jpg";
     cookie.innerHTML = cookie.src;
   }
   if (numberOfCookies >= 9) {
     teemo.src = "./res/img/teemo.jpg";
     teemo.innerHTML = teemo.src;
-    teemo.onclick = () =>{
-      
-    }
+    
   }
   if (numberOfCookies >= 10) {
     teemo.src = "./res/img/transparent.jpg";
