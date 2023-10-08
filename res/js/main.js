@@ -1,7 +1,7 @@
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
-const upgradeClickButton = document.getElementById("upgradeClickButton");
-const upgradeAutoClickButton = document.getElementById("upgradeAutoClickButton");
+const upgradeClickButtonWrapper = document.getElementById("upgradeClickButtonWrapper");
+const upgradeAutoClickButtonWrapper = document.getElementById("upgradeAutoClickButtonWrapper");
 
 let numberOfCookies = 0;
 let clickIncrease = 1;
@@ -22,15 +22,15 @@ cookie.onclick = () => {
   // => arrow funkce
   numberOfCookies += clickIncrease;
   console.log(numberOfCookies);
-  counter.innerHTML = "RP: " + numberOfCookies;
+  counter.innerHTML = "CS: " + numberOfCookies;
   
 };
 //upgrade
-upgradeClickButton.onclick = () => {
+upgradeClickButtonWrapper.onclick = () => {
   if (numberOfCookies >= clickUpgradePrice) {
     //odectu susenky
     numberOfCookies -= clickUpgradePrice;
-    counter.innerHTML = "RP: " + numberOfCookies;
+    counter.innerHTML = "CS: " + numberOfCookies;
     clickUpgradePrice += 50;
     upgradeClickButton.innerText ="Upgrade: " + clickUpgradePrice;
     
@@ -38,15 +38,15 @@ upgradeClickButton.onclick = () => {
     clickIncrease++;
   }
 };
-upgradeAutoClickButton.onclick = () => {
+upgradeAutoClickButtonWrapper.onclick = () => {
   if (numberOfCookies >= 100) {
     //odectu cenu
     numberOfCookies -= autoclickerPrice;
-   
+
     //aktualizuji odstavec
-    counter.innerHTML = "RP: " + numberOfCookies;
+    counter.innerHTML = "CS: " + numberOfCookies;
     autoclickerPrice+=100;
-    upgradeAutoClickButton.innerText = "Buy autoclick upgrade: " + autoclickerPrice;
+    upgradeAutoClickButton.innerText = "Buy autofarm upgrade: " + autoclickerPrice;
     //zvedne autoclicker hodnotu
     autoClickIncrease++;
     
@@ -57,7 +57,7 @@ upgradeAutoClickButton.onclick = () => {
     //           a
     autoclicker = setInterval(() => {
       numberOfCookies += autoClickIncrease;
-      counter.innerHTML = "RP: " + numberOfCookies;
+      counter.innerHTML = "CS: " + numberOfCookies;
     }, 1000);
     // b
   }
@@ -81,7 +81,7 @@ turnOnCheats ();
 // specialni fotky za urcite cookies
 cookie.onclick = () => {
   numberOfCookies += clickIncrease;
-  counter.innerHTML = "RP:" + numberOfCookies;
+  counter.innerHTML = "CS:" + numberOfCookies;
 
   if (numberOfCookies >= 500) {
     counter.innerHTML = "Počet kuldů:" + numberOfCookies;
@@ -89,13 +89,13 @@ cookie.onclick = () => {
     cookie.innerHTML = cookie.src;
   }
   if (numberOfCookies < 500) {
-    counter.innerHTML = "RP:" + numberOfCookies;
+    counter.innerHTML = "CS:" + numberOfCookies;
     cookie.src = "./res/img/cookie.jpg";
     cookie.innerHTML = cookie.src;
   }
 
   if (numberOfCookies >= 1000) {
-    counter.innerHTML = "RP:" + numberOfCookies;
+    counter.innerHTML = "CS:" + numberOfCookies;
     cookie.src = "./res/img/cookie23.jpg";
     cookie.innerHTML = cookie.src;
   }

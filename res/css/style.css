@@ -1,7 +1,7 @@
 *{
     font-family: 'Kanit', sans-serif;
     user-select: none;
-    
+    cursor: url('../img/cursor.png'), auto;
 }
 body{
     background-image: url(../img/3501759.png);
@@ -9,13 +9,18 @@ body{
     font-size: larger;
     
 }
-
-
+#cursor{
+    cursor: url('/res/img/cursorlol.jpg'), auto;
+}
+.cursor{
+    cursor: url('/res/img/cursorlol.jpg'), auto;
+}
 #cookie {
     max-width: 20%;
     width: 100%;
-    cursor: pointer;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 #counter{
@@ -33,26 +38,26 @@ body{
 
 
 #upgradeClickButton{
-    cursor: pointer;
     border: none;
     margin-left: 10%;
     /* transition: .2sec ease; */
     background-color: transparent;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
 }
 #upgradeAutoClickButton{
-    cursor: pointer;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
     border: none;
     transition: .2sec ease;
     font-size: larger;
     background-color: transparent;
-    
+    margin-top: 2px;
 }
 
 
 #upgradeClickButtonWrapper{
     border: 6px solid black;
     width: 30%;
-    cursor: pointer;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
     margin: auto;
     height: 75px;
     transition: 0.5s ease ;
@@ -65,19 +70,22 @@ body{
 #upgradeAutoClickButtonWrapper{
     border: 6px solid black;
     width: 30%;
-    cursor: pointer;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
     margin: auto;
     margin-top: 10px;
-    height: 75px;
+    height: 344px;
     transition: 0.5s ease ;
     background-color: rgb(100, 176, 215);
+    /* padding-top: 1%; */
 }
 #upgradeAutoClickButtonWrapper:hover{
     transform: scale(1.3);
 }
 .upgradeImg{
-    max-width: 60px;
-    width: auto;
+    max-width: 75px;
+    cursor: url('/res/img/cursorlol.jpg'), auto;
+    padding-top: 15%;
+
 }
 #upgrade{
     float: right;
@@ -93,6 +101,10 @@ body{
 .center{
     align-items: center;
     text-align: center;
+}
+.nasus{
+    width: 100%;
+    height: 300px;
 }
 /* #upgradeClickButton:hover{
 
