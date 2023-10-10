@@ -2,6 +2,7 @@
     font-family: 'Kanit', sans-serif;
     user-select: none;
     cursor: url('../img/cursor.png'), auto;
+    
 }
 body{
     background-image: url(../img/3501759.png);
@@ -11,9 +12,16 @@ body{
 }
 #cursor{
     cursor: url('../img/cursorlol.jpg'), auto;
+    width: 20%;
 }
+#cursor2{
+    cursor: url('../img/cursorlol.jpg'), auto;
+    
+}
+
 .cursor{
     cursor: url('../img/cursorlol.jpg'), auto;
+
 }
 #cookie {
     max-width: 20%;
@@ -21,10 +29,15 @@ body{
     cursor: url('../img/cursorlol.jpg'), auto;
     margin: 0 auto;
     background-color: transparent;
+    transition: 0.5s ease ;
+}
+#cookie:hover{
+    transform: scale(1.3);
 }
 
 #counter{
     font-size: 30px;
+    margin-top: 10px;
 }
 
 
@@ -43,11 +56,11 @@ body{
     /* transition: .2sec ease; */
     background-color: transparent;
     cursor: url('../img/cursorlol.jpg'), auto;
+    padding-left: 20%;
 }
 #upgradeAutoClickButton{
     cursor: url('../img/cursorlol.jpg'), auto;
     border: none;
-    transition: .2sec ease;
     font-size: larger;
     background-color: transparent;
     margin-top: 2px;
@@ -56,12 +69,13 @@ body{
 
 #upgradeClickButtonWrapper{
     border: 6px solid black;
+    border-radius: 10px;
     width: 30%;
     cursor: url('../img/cursorlol.jpg'), auto;
     margin: auto;
     height: 75px;
     transition: 0.5s ease ;
-    background-color: rgb(48, 169, 48);
+    background-color: rgb(100, 176, 215);
 }
 #upgradeClickButtonWrapper:hover{
     transform: scale(1.3);
@@ -69,6 +83,7 @@ body{
 
 #upgradeAutoClickButtonWrapper{
     border: 6px solid black;
+    border-radius: 10px;
     width: 30%;
     cursor: url('../img/cursorlol.jpg'), auto;
     margin: auto;
@@ -78,22 +93,31 @@ body{
     background-color: rgb(100, 176, 215);
     /* padding-top: 1%; */
 }
+
 #upgradeAutoClickButtonWrapper:hover{
     transform: scale(1.3);
 }
 .upgradeImg{
-    max-width: 75px;
+    padding-top: 10%;
     cursor: url('../img/cursorlol.jpg'), auto;
-    padding-top: 15%;
-    
+    height: 90%;
+    margin-left: 40%;
+}
+.upgradeImg2{
+    padding-top: 10%;
+    cursor: url('../img/cursorlol.jpg'), auto;
+    height: 90%;
+    margin-right: 40%;
+    float: right;
 }
 #upgrade{
     float: right;
-    padding-right: 30%;
+    padding-right: 17%;
     padding-top: 3%;
     background-color: rgb(100, 176, 215);
-    height: auto;
+    height: 80%;
     font-size: 20px;
+    width: 60%;
     
 }
 
@@ -106,7 +130,36 @@ body{
     width: 100%;
     height: 300px;
 }
-/* #upgradeClickButton:hover{
 
-    transform: scale(1.3);
-} */
+
+@media only screen and (max-width: 1600px){
+    #upgradeClickButtonWrapper{
+        width: 45%;
+    }
+    #upgradeAutoClickButtonWrapper{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 964px){
+    #upgradeClickButtonWrapper{
+        
+        width: 100%;
+    }
+    #upgradeAutoClickButtonWrapper{
+        width: 60%;
+    }
+    #cookie{
+        max-width: 50%;
+    }
+    #upgradeClickButtonWrapper:hover{
+        transform: scale(1);
+    }
+    #upgradeAutoClickButtonWrapper:hover{
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 700px){
+    #upgradeAutoClickButtonWrapper{
+        width: 100%;
+    }
+}
